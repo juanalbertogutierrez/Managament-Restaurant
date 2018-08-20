@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mesero BG</string>
+    <string name="Registro">Registro Meseros</string>
+    <string name="Login">LOGIN</string>
+    <string name="title_activity_main2">Meseros</string>
+    <string name="Mesa">Mesas</string>
+    <string name="Agregar_mesa">Agregar Mesa</string>
+    <string name="Actualizar">Actualizar lista</string>
+    <string name="OrdenesMesa">Ordenes de la Mesa</string>
+    <string name="PlatillosOrden">Platillos de la Orden</string>
+    <string name="title_activity_main22">Meseros</string>
+    <string name="Statusorden">Pendiente</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.soft.bremotlajugo.aplicacioncarta.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nomRestaurant"
+        android:id="@+id/textoNomrestaurante"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorLetras" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/restaurante"
+        android:layout_below="@+id/textoNomrestaurante"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonMenu"
+        android:id="@+id/botonMenu"
+        android:visibility="visible"
+        android:background="@color/colorBotones"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/botonPagar"
+        android:layout_alignStart="@+id/botonPagar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonOrdenes"
+        android:id="@+id/botonOrdenes"
+        android:layout_below="@+id/botonMenu"
+        android:layout_alignLeft="@+id/botonMenu"
+        android:layout_alignStart="@+id/botonMenu"
+        android:background="@color/colorBotones" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_pagar"
+        android:id="@+id/botonPagar"
+        android:layout_below="@+id/botonOrdenes"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBotones" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonLLamadomesero"
+        android:id="@+id/textLLamarmesero"
+        android:textColor="@color/colorLetras"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.soft.bremotlajugo.aplicacioncarta.MainMenuplatillos"
+    tools:showIn="@layout/activity_menuplatillos">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ordenar"
+        android:id="@+id/buttonOrdenar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:background="@color/colorBotones"
+        android:textColor="@color/colorLetras"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonEntradas"
+        android:id="@+id/buttonEntradas"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorBotones"
+        android:textColor="@color/colorLetras" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonSopas"
+        android:id="@+id/buttonSopas"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonEntradas"
+        android:layout_toEndOf="@+id/buttonEntradas"
+        android:background="@color/colorBotones"
+        android:textColor="@color/colorLetras" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonQuesos"
+        android:id="@+id/buttonQuesos"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonSopas"
+        android:layout_toEndOf="@+id/buttonSopas"
+        android:background="@color/colorBotones"
+        android:textColor="@color/colorLetras" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonEnsaladas"
+        android:id="@+id/buttonEnsaladas"
+        android:layout_below="@+id/buttonEntradas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorBotones"
+        android:textColor="@color/colorLetras" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonFiletes"
+        android:id="@+id/buttonFiletes"
+        android:layout_alignBottom="@+id/buttonEnsaladas"
+        android:layout_toRightOf="@+id/buttonEnsaladas"
+        android:layout_toEndOf="@+id/buttonEnsaladas"
+        android:background="@color/colorBotones"
+        android:textColor="@color/colorLetras" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonMenudia"
+        android:id="@+id/buttonMenudia"
+        android:layout_below="@+id/buttonQuesos"
+        android:layout_toRightOf="@+id/buttonFiletes"
+        android:layout_toEndOf="@+id/buttonFiletes"
+        android:background="@color/colorBotones"
+        android:textColor="@color/colorLetras" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:id="@+id/listaPlatillos"
+        android:background="@color/colorLetras"
+        android:layout_below="@+id/buttonEnsaladas"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+
+</RelativeLayout>

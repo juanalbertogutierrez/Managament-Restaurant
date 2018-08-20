@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/fondo"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainVerorden"
+    tools:showIn="@layout/activity_verorden">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLetras"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textoOrdenesdemesa"
+        android:id="@+id/textoEditarorden"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botonAñadirplatillo"
+        android:id="@+id/botonAñadirplatillo"
+        android:background="@color/colorBotones"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="106dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botonBorrarplatillo"
+        android:id="@+id/botonBorrarplatillo"
+        android:background="@color/colorBotones"
+        android:layout_alignTop="@+id/botonAñadirplatillo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botonCancelarorden"
+        android:id="@+id/botonCancelarorden"
+        android:background="@color/colorBotones"
+        android:layout_alignTop="@+id/botonBorrarplatillo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botonStatus"
+        android:background="@color/colorStatus"
+        android:id="@+id/botonStatus"
+        android:layout_above="@+id/botonBorrarplatillo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaOrdenvisual"
+        android:layout_below="@+id/textoEditarorden"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorLetras"
+        android:layout_above="@+id/botonStatus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textoVerorden"
+        android:background="@color/colorBotones"
+        android:id="@+id/botonVisualizarorden"
+        android:layout_below="@+id/listaOrdenvisual"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status de la orden"
+        android:textColor="@color/colorLetras"
+        android:id="@+id/textView"
+        android:layout_below="@+id/listaOrdenvisual"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp" />
+
+
+</RelativeLayout>
